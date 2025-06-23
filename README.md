@@ -1,4 +1,3 @@
-```markdown
 # DeadZone-App
 
 🚀 **DeadZone-App** is the official launcher for **Revive: The Last Stand Dead Zone**, featuring integrated Flash Player and Discord Rich Presence support.
