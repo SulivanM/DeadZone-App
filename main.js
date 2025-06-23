@@ -48,6 +48,20 @@ app.on('ready', () => {
         win.show();
     });
 
+    win.webContents.on('did-fail-load', () => {
+        const errorHTML = `
+            <html>
+            <body style="background-color: black; color: white; display:flex; justify-content:center; align-items:center; height:100vh; margin:0;">
+                <div style="text-align:center; font-family: Arial, sans-serif;">
+                    <h1>Please ensure your game server is running.</h1>
+                </div>
+            </body>
+            </html>
+        `;
+        win.loadURL('data:text/html;charset=utf-8,' + encodeURIComponent(errorHTML));
+        win.show();
+    });
+
     win.maximize();
     win.webContents.session.clearCache(() => {});
     initializeBrowserMenu(win);
