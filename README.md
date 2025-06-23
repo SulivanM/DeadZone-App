@@ -99,4 +99,3 @@ If you like the project and want to support development:
 ## 📜 License
 
 This project is open for personal and non-commercial use only.
-```
