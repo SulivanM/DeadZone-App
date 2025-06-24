@@ -31,8 +31,8 @@ app.on('ready', () => {
         icon: "resources/logo.png",
         webPreferences: {
             plugins: true,
-            contextIsolation: false,
-            nodeIntegration: true
+            contextIsolation: true,
+            nodeIntegration: false
         },
         title: "The Last Stand: Dead Zone Revive",
         autoHideMenuBar: true,
