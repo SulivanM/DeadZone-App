@@ -11,9 +11,6 @@
       "url": "https://github.com/SulivanM"
     }
   ],
-  "directories": {
-    "flashver": "flashver"
-  },
   "keywords": [
     "tlsdz",
     "tlsdz app",
@@ -49,6 +46,9 @@
       "!node_modules/*/{test,__tests__,tests}/**",
       "!**/*.map"
     ],
+    "directories": {
+      "flashver": "flashver"
+    },
     "extraResources": [
       "resources/logo.png"
     ],
