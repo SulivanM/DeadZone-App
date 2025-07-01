@@ -24,12 +24,11 @@
   },
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . \"Dead Zone Revive\" --out=build --platform=all --icon=./resources/logo.ico --extraResource=resources/logo.png",
-    "buildx32": "electron-packager . \"Dead Zone Revive\" --out=build --platform=all --arch=ia32 --icon=./resources/logo.ico --extraResource=resources/logo.png",
+    "build": "electron-packager . \"Dead Zone Revive\" --out=build --platform=win32 --arch=x64 --icon=./resources/logo.ico --extraResource=resources/logo.png --overwrite",
     "pack": "build --dir"
   },
   "devDependencies": {
-    "electron": "^11.4.9",
+    "electron": "^11.5.0",
     "electron-packager": "^15.2.0",
     "electron-rebuild": "^3.2.7"
   },
