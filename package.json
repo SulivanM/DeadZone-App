@@ -26,38 +26,14 @@
     "start": "electron .",
     "build": "electron-packager . \"Dead Zone Revive\" --out=build --platform=all --icon=./resources/logo.ico --extraResource=resources/logo.png",
     "buildx32": "electron-packager . \"Dead Zone Revive\" --out=build --platform=all --arch=ia32 --icon=./resources/logo.ico --extraResource=resources/logo.png",
-    "pack": "build --dir",
-    "dist": "electron-builder"
+    "pack": "build --dir"
   },
   "devDependencies": {
     "electron": "^11.4.9",
-    "electron-builder": "^22.11.7",
     "electron-packager": "^15.2.0",
     "electron-rebuild": "^3.2.7"
   },
   "dependencies": {
     "discord-rpc": "^4.0.1"
-  },
-  "build": {
-    "appId": "com.deadzone.revive",
-    "productName": "Dead Zone Revive",
-    "files": [
-      "**/*",
-      "!node_modules/*/{test,__tests__,tests}/**",
-      "!**/*.map"
-    ],
-    "directories": {
-      "flashver": "flashver"
-    },
-    "extraResources": [
-      "resources/logo.png"
-    ],
-    "win": {
-      "icon": "resources/logo.ico",
-      "target": ["nsis"]
-    },
-    "publish": {
-      "provider": "github"
-    }
   }
 }
