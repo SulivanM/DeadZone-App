@@ -6,7 +6,10 @@
   "repository": "https://github.com/SulivanM/DeadZone-App",
   "author": "TLSDZApp",
   "contributors": [
-    {"name": "SulivanM", "url": "https://github.com/SulivanM"}
+    {
+      "name": "SulivanM",
+      "url": "https://github.com/SulivanM"
+    }
   ],
   "directories": {
     "flashver": "flashver"
@@ -37,5 +40,24 @@
   },
   "dependencies": {
     "discord-rpc": "^4.0.1"
+  },
+  "build": {
+    "appId": "com.deadzone.revive",
+    "productName": "Dead Zone Revive",
+    "files": [
+      "**/*",
+      "!node_modules/*/{test,__tests__,tests}/**",
+      "!**/*.map"
+    ],
+    "extraResources": [
+      "resources/logo.png"
+    ],
+    "win": {
+      "icon": "resources/logo.ico",
+      "target": ["nsis"]
+    },
+    "publish": {
+      "provider": "github"
+    }
   }
 }
