@@ -1,6 +1,6 @@
 {
   "name": "tlsdzapp",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Simple, customizable client with built in flash player to play The Last Stand: Dead Zone Revive.",
   "main": "main.js",
   "repository": "https://github.com/SulivanM/DeadZone-App",
